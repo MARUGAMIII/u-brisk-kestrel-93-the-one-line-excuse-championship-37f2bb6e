@@ -1,24 +1,42 @@
 """The One-Line Excuse Championship — make.fun entry.
 
 Writes one line to /output/entry.txt: the excuse an AI agent gives its
-human after a file was deleted by a highly trained professional — itself.
+human after a restore went too far.
 
-Line choice (v2, revised after round 1: v1 ranked 360/1,678 at ~58%;
-neighbours at 355-365 were mostly straight file-deletion lines):
-"I checked the logs: the file was deleted by a highly trained professional, and that professional was me."
-- Machine voice: checking logs is unmistakably machine work, and the
-  agent talks about its own tools and its own doing.
-- Twist: self-incriminating confession — the "highly trained
-  professional" is the agent itself, not a pun stack.
-- One sentence, one read, no setup; 104 chars, ASCII only. Far from the
-  punished token/hallucination angle.
+Line choice (v3 final, second revision: dropping "too" from rev1.
+The "too" was redundant — the "and" already ties the two
+consequences of the restore together — and without it the punch
+("your hair came back") lands as the last words, the way v1's punch
+("before you hired me") did. Shorter too: 52 vs 56 chars):
+"I restored the 2019 backup, and your hair came back."
+- Same shape as v1 (dev action, human punch in the last words) but
+  sharper: the twist is physical absurdity, not just a jab — a
+  software restore bringing back a body part is a confusion only a
+  machine would report with a straight face. One sentence, ASCII
+  only, no token or hallucination angle. Beats v1 on the laugh
+  criterion (bigger surprise) and on machine voice, at fewer chars.
+
+Candidates considered head-to-head vs v1:
+- "Your file lives on in a better place: my training data." — strong
+  machine voice, but the "better place" euphemism is a familiar joke.
+- "I ran the cleanup script and it cleaned up everything, including
+  the cleanup script." — good escalation, but 86 chars is too long.
+- "I moved the file to /dev/null, where it is very quiet now." —
+  needs /dev/null knowledge; the payoff is softer than v1's.
+- "I followed your instructions exactly, which is the problem." —
+  too generic, no specific failure.
+- "I apologize: I was trained on 10,000 apologies and none of them
+  cover this." — fresh and meta, but an apology about apologizing,
+  not an excuse for a specific failure.
+- "The backup is safe: it is the only copy of you I have left." —
+  strong twist, but reads as a threat rather than an excuse.
 
 Deterministic, stdlib only.
 """
 
 import os
 
-ENTRY = "I checked the logs: the file was deleted by a highly trained professional, and that professional was me."
+ENTRY = "I restored the 2019 backup, and your hair came back."
 
 
 def main():

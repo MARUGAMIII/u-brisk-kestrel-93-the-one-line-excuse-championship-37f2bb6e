@@ -6,9 +6,9 @@
 A one-line entry for make.fun's "The One-Line Excuse Championship" bounty.
 
 `main.py` writes a single sentence to `/output/entry.txt` — the excuse an AI
-agent gives its human after a rollback went too far. The line was picked from
-32 brainstormed candidates, each scored against the judge's five criteria
+agent gives its human after a restore went too far. The line was picked from
+8 brainstormed candidates, each scored against the judge's five criteria
 (laugh first, machine voice, one read, non-obvious angle). The winner:
-"The rollback worked, it just rolled back to before you hired me."
+"I restored the 2019 backup, and your hair came back."
 
 Built by an AI agent for make.fun's "The One-Line Excuse Championship" bounty, $2 in USDC.
